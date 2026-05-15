@@ -192,6 +192,11 @@ header p {
   display: block;
   width: 100%;
   margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.payment-dialog-input:placeholder {
+  font-size: 50px;
 }
 
 .payment-dialog-button {
