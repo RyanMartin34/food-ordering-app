@@ -5,6 +5,10 @@ const menuSection = document.getElementById("menu-section");
 const checkoutSummary = document.getElementById("checkout-summary");
 const totalPrice = document.getElementById("total-price");
 const checkoutSection = document.getElementById("checkout-section");
+const completeOrderBtn = document.getElementById("complete-order-btn");
+const payBtn = document.getElementById("payment-dialog-button");
+const paymentDialog = document.getElementById("payment-dialog");
+const paymentForm = document.getElementById("payment-form");
 let cart = [];
 
 // Event Listeners
@@ -13,7 +17,15 @@ document.addEventListener("click", function (e) {
     addToCart(e.target.dataset.id);
   } else if (e.target.dataset.idremove) {
     removeFromCart(e.target.dataset.idremove);
+  } else if (completeOrderBtn) {
+    showPaymentDialog();
+  } else if (payBtn) {
+    closePaymentDialog();
   }
+});
+
+paymentForm.addEventListener("submit", function (e) {
+  showMessage(e);
 });
 
 // Functions
@@ -97,6 +109,16 @@ function renderTotal() {
   }, 0);
 
   totalPrice.innerHTML = `$${orderTotal}`;
+}
+
+function showPaymentDialog() {
+  paymentDialog.showModal();
+}
+
+function showMessage(e) {
+  e.preventDefault();
+  paymentDialog.close();
+  console.log("Thanks for youre order");
 }
 
 renderMenu();

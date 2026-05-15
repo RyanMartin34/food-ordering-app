@@ -42,8 +42,40 @@
         <p id="total-price" class="total-price"></p>
       </div>
 
-      <button>Complete Order</button>
+      <button id="complete-order-btn">Complete Order</button>
     </section>
+
+    <dialog id="payment-dialog">
+      <h2 class="payment-dialog-title">Enter Card Detials</h2>
+      <form id="payment-form">
+        <input
+          type="text"
+          placeholder="Enter your name"
+          class="payment-dialog-input"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Enter card number"
+          class="payment-dialog-input"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Enter CVV"
+          class="payment-dialog-input"
+          required
+        />
+
+        <button
+          type="submit"
+          class="payment-dialog-button"
+          id="payment-dialog-button"
+        >
+          Pay
+        </button>
+      </form>
+    </dialog>
 
     <script src="index.js" type="module"></script>
   </body>
