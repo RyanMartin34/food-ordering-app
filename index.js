@@ -125,7 +125,7 @@ function showMessage(e) {
 
   const userName = document.getElementById("user-name").value;
 
-  thankYouMessage.textContent = `Thanks, ${userName}! Your order is on its way!`;
+  thankYouMessage.textContent = `Thanks, ${userName}! Your order is on its way! ✅`;
 }
 
 renderMenu();

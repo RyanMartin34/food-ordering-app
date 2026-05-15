@@ -222,6 +222,11 @@ header p {
   padding: 25px;
 }
 
+.thank-you-section p {
+  font-size: 22px;
+  color: #065f46;
+}
+
 .thank-you-section-hidden {
   display: none;
 }
