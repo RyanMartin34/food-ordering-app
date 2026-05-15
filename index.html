@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Ryan's Diner</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ryan's Diner</h1>
+      <p>The best burgers and pizzas in town.</p>
+    </header>
+
+    <section id="menu-section">
+      <!-- JS Render Menu Here -->
+    </section>
+
+    <section id="checkout-section" class="checkout-section hidden">
+      <div class="checkout-section-title">
+        <h3>Your Order</h3>
+      </div>
+
+      <div id="checkout-summary" class="checkout-summary">
+        <!-- JS Render Checkout Here -->
+      </div>
+
+      <div class="checkout-total">
+        <p>Total Price:</p>
+        <p id="total-price" class="total-price"></p>
+      </div>
+
+      <button>Complete Order</button>
+    </section>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: "Smythe", system-ui;
+  font-size: 28px;
+}
+
+/* Text */
+
+h1 {
+  margin: 0;
+  font-size: 39px;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/header-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 600px;
+  height: 167px;
+  padding: 0px 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+header p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* Menu Items Section */
+#menu-section {
+  padding: 0 25px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #dedede;
+  padding: 45px 0;
+}
+
+.menu-item-image {
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+}
+
+.menu-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.menu-item-text-name {
+  font-size: 28px;
+  margin: 0;
+}
+
+.menu-item-text-ingredients {
+  font-size: 16px;
+  color: #8b8b8b;
+}
+
+.menu-item-text-price {
+  font-size: 20px;
+}
+
+.menu-item-button {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item button {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.3);
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+}
+
+.menu-item button:hover {
+  color: white;
+  background-color: #16db99;
+}
+
+/* Checkout Section */
+.checkout-section {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+.checkout-section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.checkout-summary {
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.cart-item-name {
+  font-size: 28px;
+}
+
+.cart-item-remove {
+  color: #bbbbbb;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.cart-item-price {
+  display: flex;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.total-price {
+  font-size: 20px;
+}
+
+.checkout-section button {
+  color: white;
+  background-color: #16db99;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
