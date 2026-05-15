@@ -121,7 +121,7 @@ function showMessage(e) {
   e.preventDefault();
   paymentDialog.close();
   checkoutSection.classList.add("hidden");
-  thankYouSection.classList.remove("hidden");
+  thankYouSection.classList.remove("thank-you-section-hidden");
 
   const userName = document.getElementById("user-name").value;
 

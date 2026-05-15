@@ -221,3 +221,7 @@ header p {
   background-color: #ecfdf5;
   padding: 25px;
 }
+
+.thank-you-section-hidden {
+  display: none;
+}
