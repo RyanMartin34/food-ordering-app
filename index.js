@@ -9,6 +9,8 @@ const completeOrderBtn = document.getElementById("complete-order-btn");
 const payBtn = document.getElementById("payment-dialog-button");
 const paymentDialog = document.getElementById("payment-dialog");
 const paymentForm = document.getElementById("payment-form");
+const thankYouSection = document.getElementById("thank-you-section");
+const thankYouMessage = document.getElementById("thank-you-message");
 let cart = [];
 
 // Event Listeners
@@ -118,7 +120,12 @@ function showPaymentDialog() {
 function showMessage(e) {
   e.preventDefault();
   paymentDialog.close();
-  console.log("Thanks for youre order");
+  checkoutSection.classList.add("hidden");
+  thankYouSection.classList.remove("hidden");
+
+  const userName = document.getElementById("user-name").value;
+
+  thankYouMessage.textContent = `Thanks, ${userName}! Your order is on its way!`;
 }
 
 renderMenu();

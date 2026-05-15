@@ -45,12 +45,17 @@
       <button id="complete-order-btn">Complete Order</button>
     </section>
 
+    <section id="thank-you-section" class="thank-you-section hidden">
+      <p id="thank-you-message"></p>
+    </section>
+
     <dialog id="payment-dialog">
       <h2 class="payment-dialog-title">Enter Card Detials</h2>
       <form id="payment-form">
         <input
           type="text"
           placeholder="Enter your name"
+          id="user-name"
           class="payment-dialog-input"
           required
         />

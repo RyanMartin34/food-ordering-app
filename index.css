@@ -211,3 +211,13 @@ header p {
   font-weight: bold;
   font-size: 16px;
 }
+
+/* Thank You Section */
+.thank-you-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 25px;
+  background-color: #ecfdf5;
+  padding: 25px;
+}
